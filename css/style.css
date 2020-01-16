@@ -1,0 +1,644 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*======================================Banner Section=================================*/
+
+.banner{
+    background: url(../img/banner.png);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px 0;
+    position: relative;
+}
+.banner::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+.navbar{
+    background: transparent !important;
+    padding: 37px 0;
+    z-index: 10;
+
+
+}
+.navbar-brand{
+    width: 50%;
+    padding-left: 45px;
+}
+.navbar ul li{
+    text-decoration: none;
+    
+}
+.navbar ul li a{
+    color: white !important;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+}
+.nav-content::after{
+    content:"\\";
+    margin: 0 70px;
+}
+.banner-main{
+    margin-top: 100px;
+    color: white;
+    z-index: 10;
+}
+.banner-heading{
+    width: 90%;
+    font-size: 50px;
+    font-weight: 400;
+    padding: 22px 10px;
+    font-family: 'PT Sans', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.banner-para{
+    width: 85%;
+    margin-top: 25px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;;
+}
+.banner-span{
+    display: block;
+    border-bottom: 1px solid white;
+    width: 20px;
+    margin-top: 74px;
+}
+.btn-banner{
+    margin-top: 35px;
+    margin-bottom: 150px;
+    padding: 18px 100px;
+    background: transparent;
+    color: white;
+    border-color: white;
+}
+
+
+
+
+.welcome{
+    background: #f6f6f6;
+    padding: 30px 0;
+}
+.welcome-left{
+    padding-top: 95px;
+    padding-bottom: 30px;
+}
+.welcome-left h1{
+    color: #333333;
+}
+.welcome-left span{
+    display: block;
+    border-bottom: 2px solid #8f8f8f;
+    width: 20px;
+    margin: 30px 0;
+}
+.welcome-left p{
+    color: #8f8f8f;
+    margin-top: 10px;
+    width: 55%;
+    font-size: 14px;
+}
+.welcome-right{
+    padding-top: 95px;
+    padding-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+.vejal {
+    position: absolute;
+    left: -291px;
+    top: 25%;
+    width: 146%;
+}
+
+
+.another-welcome{
+    padding-top: 125px;
+}
+.another-welcome{
+    background: #28282e;
+    color: white;
+}
+.another-welcome hr{
+    background-color: white;
+    width: 4%;
+}
+.another-welcome p{
+    color: #8f8f8f;
+    width: 90%;
+    font-size: 14px;
+}
+.another-welcome button{
+    margin-top: 40px;
+    margin-bottom: 100px;
+    padding: 10px;
+    color: #f9f9f9;
+    background: transparent;
+    box-shadow: none;
+    border: 1px solid #f9f9f9;
+}
+
+.footer-home{
+    background: #ef4035;
+}
+.copyright p{
+    margin: 30px 0;
+    color: white;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================================About Section======================================*/
+.about-header{
+
+}
+.about-header .navbar ul li a{
+    color: #005e7e !important;
+}
+.about-header hr{
+    margin: 0;
+    border-width: 5px;
+}
+.about-left{
+    padding-top: 40px;
+}
+.about-left h1{
+    font-size: 44px;
+    padding-bottom: 70px;
+    font-weight: 700;
+}
+.about-left p{
+    text-align: justify;
+}
+.left-para{
+    margin-top: 6%;
+}
+
+.about-right{
+    padding-top: 6%;
+}
+.about-right p{
+    margin-top: 13%;
+    font-size: 16px;
+}
+
+
+
+/*=============================================CONTACT US=========================================*/
+
+.contact{
+    background: #ee4a3f;
+}
+.contact h1{
+    color: white;
+    margin-top: 55px;
+    font-weight: 700;
+    font-size: 44px;
+}
+.contact p{
+    color: white;
+    width: 90%;
+}
+.contact label{
+    color: white;
+    margin-bottom: 0;
+}
+.img-right{
+    margin-top: 95px;
+}
+.img-left{
+
+}
+.contact p{
+    margin: 10px 0 20px;
+}
+form{
+    padding-bottom: 55px;
+}
+.form-control{
+    background: #ff6258;
+    border: none;
+    padding: 25px;
+    width: 80%;
+}
+.sub{
+    margin-left: 19%;
+}
+.email{
+    margin-top: 5%;
+}
+.contact-btn{
+    margin-top: 50%;
+    padding: 2% 10%;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 150%;
+    color: white;
+    background: transparent;
+    border: none;
+}
+
+
+
+
+
+
+
+/*==============================================Media Query========================================*/
+
+/*================contact section==================*/
+@media (min-width:0) and (max-width:575px){
+    .nav-content::after{
+        content:"";
+    }
+    .contact h1 {
+        margin-top: 25px;
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .img-left{
+        margin-top: 10px;
+        width: 80%;
+        display: block;
+        margin: 20px auto;
+    }
+    .contact p{
+        width: 100%;
+        text-align: justify;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .img-right{
+        margin-top: 0;
+        width: 60%;
+    }
+    .right-car{
+        text-align: center;
+    }
+    .sub{
+        margin-left: 0;
+    }
+    .form-control{
+        width: 100%;
+    }
+    .contact-btn{
+        margin-top: 10%;
+        font-size: 20px;
+    }
+    form{
+        padding: 20px;
+    }
+    .contact label {
+        font-size: 14px;
+    }
+    .copyright p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width:575.01px) and (max-width:767px){
+    .nav-content::after{
+        content:"";
+    }
+    .contact h1 {
+        margin: 25px 0;
+        font-size: 34px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .contact p{
+        width: 100%;
+        text-align: justify;
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    .img-right{
+        margin-top: 0;
+        width: 60%;
+    }
+    .right-car{
+        text-align: center;
+    }
+    .sub{
+        margin-left: 0;
+    }
+    .form-control{
+        width: 100%;
+    }
+    .contact-btn{
+        margin-top: 10%;
+        font-size: 20px;
+    }
+    form{
+        padding: 20px;
+    }
+    .contact label {
+        font-size: 15px;
+    }
+    .copyright p {
+        font-size: 15px;
+    }
+}
+@media (min-width:767.01px) and (max-width:991px){
+    .nav-content::after{
+        content:"";
+    }
+    .img-right {
+        margin-top: 80px;
+    }
+    .contact p {
+        width: 100%;
+    }
+    .form-control {
+        width: 100%;
+    }
+    .sub {
+        margin-left: 0;
+    }
+    .contact-btn {
+        margin-top: 78%;
+    }
+}
+@media (min-width:991.01px) and (max-width:1199px){
+    .nav-content::after{
+        margin: 0px 40px;
+    }
+    .navbar ul li {
+        margin: 0; 
+    }
+}
+@media (min-width:1200){
+
+}
+
+
+/*==================About Section========================*/
+
+@media (min-width:0) and (max-width:575px){
+    .nav-content::after{
+        content:"";
+    }
+    .about-left h1 {
+        font-size: 32px;
+        padding: 0 10px 20px 10px;
+    }
+    .about-left p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    .about-right{
+        text-align: center;
+    }
+    .about-right img{
+        width: 80%;
+    }
+    .about-right p {
+        font-size: 14px;
+        text-align: justify;
+        padding: 0 10px;
+    }
+    .about-copyright p{
+        font-size: 12px;
+    }
+}
+@media (min-width:575.01px) and (max-width:767px){
+    .nav-content::after{
+        content:"";
+    }
+    .about-left h1 {
+        font-size: 34px;
+        /* padding: 0 10px 20px 10px; */
+    }
+    .about-left p {
+        font-size: 15px;
+    }
+    .about-right{
+        text-align: center;
+    }
+    .about-right img{
+        width: 90%;
+    }
+    .about-right p {
+        font-size: 15px;
+        text-align: justify;
+    }
+    .about-copyright p{
+        font-size: 15px;
+    }
+}
+@media (min-width:767.01px) and (max-width:991px){
+    .about-right{
+        text-align: center;
+    }
+    .about-right img{
+        margin-top: 135px;
+    }
+    .about-right p {
+        margin-top: 20%;
+        text-align: justify;
+    }
+}
+@media (min-width:991.01px) and (max-width:1199px){
+    .about-right {
+        padding-top: 10%;
+    }
+    .about-right p {
+        margin-top: 11%;
+    }
+}
+@media (min-width:1200){
+
+}
+
+
+/*=============================Home Page======================*/
+@media (min-width:0) and (max-width:575px){
+    .banner-main {
+        margin-top: 5%;
+    }
+    .banner-heading {
+        width: 100%;
+        font-size: 28px;
+        font-weight: 700;
+    }
+    .banner-para {
+        width: 100%;
+        font-size: 14px;
+    
+    }
+    .banner-span {
+        margin-top: 25px;
+    }
+    .btn-banner {
+        margin-bottom: 10px;
+        padding: .5rem 1rem;
+        font-size: 14px;
+    }
+    .another-welcome {
+        padding-top: 30px;
+    }
+    .another-welcome-left h1{
+        font-size: 30px;
+        padding-top: 10px;
+    }
+    .another-welcome p {
+        width: 100%;
+        text-align: justify;
+    }
+    .another-welcome button {
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+    .welcome-left h1 {
+        font-size: 30px;
+    }
+    .welcome-left {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .welcome-left p {
+        width: 100%;
+    }
+    .vejal {
+        left: 3%;
+        top: 12%;
+        width: 87%;
+    }
+    .welcome-right {
+        padding-top: 20%;
+        padding-bottom: 15%;
+    }
+}
+@media (min-width:575.01px) and (max-width:767px) {
+    .welcome-left {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .welcome-left h1 {
+        font-size: 34px;
+        font-weight: 700;
+    }
+    .welcome-left p{
+        width: 100%;
+        text-align: justify;
+        font-size: 15px;
+    }
+    .vejal {
+        left: 2px;
+        top: -31%;
+        width: 90%;
+    }
+    .another-welcome {
+        padding-top: 60px;
+    }
+    .another-welcome p {
+        text-align: justify;
+        width: 100%;
+        font-size: 15px;
+    }
+    .another-welcome-left h1{
+        font-size: 34px;
+        font-weight: 700;
+    }
+    .another-welcome button {
+        margin-top: 27px;
+        margin-bottom: 63px;
+    }
+    .banner-heading {
+        width: 85%;
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .banner-para {
+        font-size: 15px;
+    
+    }
+    .btn-banner {
+        margin-top: 35px;
+        margin-bottom: 60px;
+        padding: 12px 50px;
+    }
+
+    .banner-main {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width:767.01px) and (max-width:991px){
+    .welcome-left {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .welcome-left h1 {
+        font-weight: 700;
+    }
+    .welcome-left p {
+        width: 64%; 
+    }
+    .vejal {
+        left: -189px;
+        top: 45%;
+        width: 153%;
+    }
+    .another-welcome {
+        padding-top: 50px;
+    }
+    .another-welcome p {
+        width: 100%;   
+    }
+    .another-welcome button {
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+    .banner-main {
+        margin-top: 50px;
+    }
+    .banner-heading {
+        width: 100%;
+        font-size: 39px;
+        font-weight: 700;
+    }
+    .btn-banner {
+        margin-top: 35px;
+        margin-bottom: 70px;
+    }
+    .banner-span {
+        margin-top: 50px;
+    }
+    
+}
+@media (min-width:991.01px) and (max-width:1199px){
+    .banner-heading {
+        width: 100%;
+        font-size: 50px;
+        font-weight: 700;
+    }
+    .vejal {
+        left: -217px;
+        top: 35%;
+    }
+    .welcome-left p {
+        width: 75%;
+    }
+}
+@media (min-width:1200px){
+
+}
